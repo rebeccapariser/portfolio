@@ -1,0 +1,358 @@
+body {
+  background-color:#f3f3f3;
+}
+
+
+h2 {
+  font-weight:100;
+  color:#009FDF;
+  line-height:.75em;
+  font-family:"Helvetica Neue", "Helvetica", sans-serif;
+  padding:0;
+  font-size:2.4em;
+  letter-spacing:.05em;
+}
+
+.fette-fraktur { 
+  font-family: FetteFrakturLTPro;
+  font-weight: normal;
+  font-style: normal;
+  text-transform:lowercase;
+  color:#009FDF;
+}
+
+h1 .fette-fraktur {
+  font-family: FetteFrakturLTPro, serif;
+  font-size:1.08em;
+  padding-left:2px;
+  letter-spacing:.01em;
+  position:relative;
+  top:2px;
+}
+
+.tiny-text {
+  text-transform:uppercase;
+  font-size:.75em;
+  letter-spacing:.08em;
+  color:#999;
+  font-weight:700;
+}
+
+.inline-header {
+  color:#009FDF;
+  text-transform:uppercase;
+  font-size:1em;
+  letter-spacing:.05em;
+  font-weight:700;
+}
+
+h5{
+  margin:20px 0 10px 0;
+  font-size:1.2em;
+  font-family:"Helvetica Neue", "Helvetica", sans-serif;
+  letter-spacing:.04em;
+  font-weight:200;
+  color:#009FDF;
+}
+
+ul {
+  list-style-type:none;
+  padding:15px 0 0 0;
+  line-height:1.5em;
+}
+
+hr {
+  margin:30px 0;
+  background-color:#ccc;
+  height:1px;
+}
+
+a:link, a:visited {
+  color:#009FDF;
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------Header-------------------------------------- */
+
+
+nav.navbar {
+  background-color:#fff;
+}
+nav .navbar-brand {
+  float: none;
+  display: block;
+  padding: 0;
+  padding: 3px 0 15px 0;
+  height: auto;
+}
+nav a.navbar-brand:hover,
+nav a.navbar-brand:focus {
+  text-decoration: none;
+}
+
+nav .navbar-brand h1 {
+  text-transform: lowercase;
+  font-weight:100;
+  color:#009FDF;
+  line-height:.8em;
+  font-size:3em;
+  letter-spacing:.02em;
+}
+
+nav .navbar-right {
+  padding-top: 36px;
+}
+
+nav .container > .navbar-collapse {
+  margin-right: -15px;
+}
+
+nav .navbar-toggle {
+  margin-top: 32px;
+}
+
+nav a {
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  font-size:.95em;
+  color:#009FDF;
+  text-decoration:none;
+  margin-left:20px;
+  padding:0 2px 5px 4px;
+}
+
+nav .navbar-right a:hover,
+nav .navbar-right a:focus {
+  color:#666;          
+  border-bottom: 3px solid #666;
+  text-decoration: none;
+}
+
+nav .navbar-right a.active{
+  color:#009FDF;
+  border-bottom: 3px solid #009FDF;
+}
+
+@media screen and (max-width: 480px) {
+  nav .navbar-brand h1 {
+    font-size:1.8em;
+  }
+
+  nav .navbar-toggle {
+    margin-top: 23px;
+  }
+}
+
+
+
+
+
+
+/* ---------------------------------Portfolio: Thumbnail Grid---------------------------- */
+
+
+.thumbnail-container{ 
+  padding: 130px 0 30px; 
+  width:100%;
+}
+    
+.portfolio-items {
+  width: 870px;
+  margin: 0 auto;
+}
+    
+.portfolio-item{ 
+  width: 260px; 
+  background-color: #FFFFFF;
+  padding: 0; 
+  box-shadow: 1px 2px 2px rgba(0,0,0,.05); 
+  margin: 0 15px 30px 15px;
+  display: moz-inline-stack; 
+  display: inline-block; 
+  zoom: 1; 
+  *display: inline;
+  cursor: pointer;
+}
+      
+.portfolio-item .img-container{
+  height: 260px;
+}
+      
+.portfolio-item .img-container img{
+  width: 260px;
+}  
+      
+.portfolio-item a{
+  float:right;
+}
+
+.portfolio-item h5{
+  padding-left:18px;
+}
+        
+.portfolio-item p{
+  padding: 8px 18px 0px 18px;
+  font-family:sans-serif;
+  font-size: .9em;
+  color: #666;
+  line-height: 1.55em;
+  letter-spacing: .02em;
+}
+
+.portfolio-item p.tiny-text {
+  text-transform:uppercase;
+  font-size:.75em;
+  letter-spacing:.05em;
+  color:#999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------Page Layout-------------------------------------- */
+
+
+
+
+.page-container {
+  max-width:920px;
+  margin:0 auto 80px;
+  background-color:#fff;
+  padding:30px 30px 70px;
+  box-shadow: 1px 2px 2px rgba(0,0,0,.05); 
+  min-height:400px;
+}
+
+.page-container img {
+  max-width:100%;
+  margin:8px 0;
+}
+
+.page-container .leftbar img {
+  margin:6px 0 15px;
+}
+
+.page-container h1{
+  font-size:3em;
+  line-height:.3em;
+  padding-bottom:10px;
+}
+
+
+.page-container h5 {
+  margin:36px 0 8px 0;
+}
+
+.leftbar p.tiny-text{
+  margin:5px 0 0;
+  color:#999;
+  font-style:normal;
+  font-weight:500;
+  letter-spacing:.08em;
+}
+
+.leftbar p {
+  font-style:italic;
+  font-size:.82em;
+  margin-bottom:18px;
+  letter-spacing:.04em;
+}
+
+.leftbar {
+  padding-top:55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------Project Pages-------------------------------------- */
+
+
+iframe, 
+.issuuembed {
+  max-width:100%;
+}
+
+.page-container .col-sm-6 img {
+  margin:8px 0;
+}
+
+
+
+
+
+
+/* ----------------------------------------Isotope-------------------------------------- */
+
+
+
+   
+    .isotope {
+      /* change duration value to whatever you like */
+      -webkit-transition-duration: 250ms;
+         -moz-transition-duration: 250ms;
+          -ms-transition-duration: 250ms;
+           -o-transition-duration: 250ms;
+              transition-duration: 250ms;
+    }
+    .isotope .isotope-item {
+      /* change duration value to whatever you like */
+      -webkit-transition-duration: 0.8s;
+         -moz-transition-duration: 0.8s;
+          -ms-transition-duration: 0.8s;
+           -o-transition-duration: 0.8s;
+              transition-duration: 0.8s;
+    }
+    
+    .isotope {
+      -webkit-transition-property: height, width;
+         -moz-transition-property: height, width;
+          -ms-transition-property: height, width;
+           -o-transition-property: height, width;
+              transition-property: height, width;
+    }
+    
+    .isotope .isotope-item {
+      -webkit-transition-property: -webkit-transform, opacity;
+         -moz-transition-property:    -moz-transform, opacity;
+          -ms-transition-property:     -ms-transform, opacity;
+           -o-transition-property:      -o-transform, opacity;
+              transition-property:         transform, opacity;
+    }
+    
+    /**** disabling Isotope CSS3 transitions ****/
+    
+    .isotope.no-transition,
+    .isotope.no-transition .isotope-item,
+    .isotope .isotope-item.no-transition {
+      -webkit-transition-duration: 0s;
+         -moz-transition-duration: 0s;
+          -ms-transition-duration: 0s;
+           -o-transition-duration: 0s;
+              transition-duration: 0s;
+    }
+    
+
