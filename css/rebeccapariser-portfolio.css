@@ -5,9 +5,9 @@ body {
 
 h2 {
   font-weight:100;
-  color:#009FDF;
+  color:#074f81;
   line-height:.75em;
-  font-family:"Helvetica Neue", "Helvetica", sans-serif;
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
   padding:0;
   font-size:2.4em;
   letter-spacing:.05em;
@@ -15,14 +15,13 @@ h2 {
 
 h3 {
   font-weight:bold;
-  color:#009FDF;
+  color:#074f81;
   line-height:.75em;
-  font-family:"Helvetica Neue", "Helvetica", sans-serif;
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
   padding:0;
   font-size:1.2em;
   letter-spacing:.05em;
-  margin-top: 40px;
-  margin-bottom: 35px;
+  padding-bottom:5px;
 }
 
 h4,
@@ -30,32 +29,14 @@ h4,
   font-weight:bold;
   letter-spacing: 0.3em;
   font-size: 0.8em;
-
 }
 
-/*.fette-fraktur {
-  font-family: FetteFrakturLTPro;
-  font-weight: normal;
-  font-style: normal;
-  text-transform:lowercase;
-  color:#009FDF;
-}*/
-
-/*h1 .fette-fraktur {
-  font-family: FetteFrakturLTPro, serif;
-  font-size:1.08em;
-  padding-left:2px;
-  letter-spacing:.01em;
-  position:relative;
-  top:2px;
-}*/
-
 .tiny-text {
-  text-transform:uppercase;
-  font-size:.75em;
-  letter-spacing:.08em;
   color:#999;
-  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:0.18em;
+  font-size:.8em;
+  font-weight: 600;
 }
 
 .inline-header {
@@ -69,8 +50,8 @@ h4,
 h5{
   margin:20px 0 10px 0;
   font-size:1.2em;
-  font-family:"Helvetica Neue", "Helvetica", sans-serif;
-  letter-spacing:.04em;
+  font-family:Helvetica Neue,Helvetica,sans-serif;
+  letter-spacing:.01em;
   font-weight:200;
   color:#009FDF;
 }
@@ -88,9 +69,14 @@ hr {
 }
 
 a:link, a:visited {
-  color:#009FDF;
+  color:#99bed3;
+  font-weight: bold;
 }
 
+a:hover {
+  color:#074f81;
+  text-decoration:none;
+}
 
 
 
@@ -117,12 +103,10 @@ nav a.navbar-brand:focus {
 }
 
 nav .navbar-brand h1 {
-  text-transform: lowercase;
-  font-weight:100;
-  color:#009FDF;
+  font-family: MontanaTypeface,Helvetica Neue,Helvetica,sans-serif;
+  color:#074f81;
   line-height:.8em;
   font-size:3em;
-  letter-spacing:.02em;
 }
 
 nav .navbar-right {
@@ -137,26 +121,31 @@ nav .navbar-toggle {
   margin-top: 32px;
 }
 
-nav a {
+nav .navbar-right a{
   text-transform:uppercase;
-  letter-spacing:0.08em;
-  font-size:.95em;
-  color:#009FDF;
+  letter-spacing:0.18em;
+  font-size:.8em;
+  font-weight: 600;
+  color:#99bed3;
   text-decoration:none;
   margin-left:20px;
-  padding:0 2px 5px 4px;
+  padding:4px 10px;
+  border: 3px solid #fff;
 }
 
-nav .navbar-right a:hover,
-nav .navbar-right a:focus {
-  color:#666;
-  border-bottom: 3px solid #666;
+nav .navbar-right a:hover {
+  color:#074f81;
   text-decoration: none;
 }
 
+nav .navbar-right a:focus {
+  outline: none;
+  border: 3px solid #efefef;
+}
+
 nav .navbar-right a.active{
-  color:#009FDF;
-  border-bottom: 3px solid #009FDF;
+  color:#074f81;
+  border: 3px solid #074f81;
 }
 
 @media screen and (max-width: 480px) {
@@ -175,12 +164,6 @@ nav .navbar-right a.active{
 
 
 /* ---------------------------------Portfolio: Thumbnail Grid---------------------------- */
-
-
-.thumbnail-container{
-  padding: 130px 0 30px;
-  width:100%;
-}
 
 .portfolio-container {
   width: 870px;
@@ -202,7 +185,7 @@ nav .navbar-right a.active{
    for this context */
 div.portfolio-item {
   width: 260px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   padding: 0;
   box-shadow: 1px 2px 2px rgba(0,0,0,.05);
   margin-bottom: 30px;
@@ -211,6 +194,11 @@ div.portfolio-item {
   zoom: 1;
   *display: inline;
   cursor: pointer;
+}
+
+.thumbnail-container{
+  padding: 130px 0 30px;
+  width:100%;
 }
 
 .portfolio-item .img-container{
@@ -223,30 +211,112 @@ div.portfolio-item {
 
 .portfolio-item h5{
   padding-left:18px;
-  color: #666;
-  font-weight:300;
+  color: #333;
+  font-weight:400;
+}
+
+h3.portfolio-item{
+  margin-top: 40px;
+  margin-bottom: 35px;
 }
 
 .portfolio-item p{
   padding: 0px 18px 10px 18px;
   font-family:sans-serif;
-  font-size: .9em;
-  color: #666;
-  line-height: 1.55em;
+  font-size: .85em;
+  color: #333;
+  line-height: 1.4em;
   letter-spacing: .02em;
-}
-
-.portfolio-item p.tiny-text {
-  text-transform:uppercase;
-  font-size:.75em;
-  letter-spacing:.05em;
-  color:#999;
+  font-weight:400;
 }
 
 
 
 
 
+/* -------------------------------------------About----------------------------------------- */
+
+.page-container img.headshot {
+  padding:0;
+  margin:0;
+  max-width:350px;
+  width:100%;
+}
+
+hr.tight-top{
+  padding-top:0;
+  margin-top:0;
+  border-top:0;
+}
+
+button.icon {
+  border:none;
+  background-color: #fff;
+  padding:10px 30px 0 0;
+  margin:0;
+}
+
+a button.icon:visited,
+a button.icon:focus {
+  outline: none;
+  /*outline-color: #fff;
+  outline-style: auto;
+  outline-width: 0;*/
+}
+
+.page-container img.resumethumb {
+  border:1px solid #000;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.18);
+  width:100%;
+  max-width:170px;
+  /*display:block;*/
+  margin:50px auto 10px;
+}
+
+
+.personal-image-container {
+  position: relative;
+  text-align: center;
+  background-color: black;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.personal-image-container:hover .personal-label {
+  opacity: 0;
+}
+.personal-image-container:hover img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+
+p.personal-label {
+  color:#fff;
+  /*border: 3px solid #fff;*/
+  padding:4px 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: -15px auto 0;
+  height: 30px;
+  line-height: 16px;
+  cursor:default;
+  /* TODO: transition seems to cause a slight jitter, maybe related to 1/2 pixel. */
+  /*transition: opacity 0.3s ease-in-out;*/
+}
+
+.page-container img.personal {
+  margin: 0;
+}
+
+img.personal {
+ opacity: 0.5;
+ filter: alpha(opacity=50);
+ /* TODO: transition seems to cause a slight jitter, maybe related to 1/2 pixel. */
+ /*transition: opacity .3s ease-in-out;*/
+}
 
 
 
@@ -276,6 +346,7 @@ div.portfolio-item {
 
 .page-container img.hero {
 	height: 400px;
+  width: 100%;
 	background-position: top center;
 	position: absolute;
 	top: 0;
@@ -343,7 +414,7 @@ div.portfolio-item {
 
 .leftbar p.tiny-text{
   margin:5px 0 0;
-  color:#999;
+  color:#333;
   font-style:normal;
   font-weight:500;
   letter-spacing:.08em;
